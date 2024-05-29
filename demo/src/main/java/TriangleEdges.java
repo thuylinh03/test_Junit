@@ -26,12 +26,16 @@ public class TriangleEdges {
     }
 
     static boolean isEquilateral(int a, int b, int c){
-        return (a == b && b == c);
+        return (a == b && b == c && a == c);
     }
 
     static boolean isIsosceles(int a, int b, int c){
         return (a == b || b == c || a == c);
     }
+
+    static boolean isNotValidTriangle(int a, int b, int c) {
+        return ( a + b <= c || b + c <= a || a + c <= b);
+    } 
 
     public static void main(String[] args) {
         // Test with sample inputs

@@ -10,12 +10,12 @@ public class TriangleEdgesTest {
     
     @Test
     public void testTriangleEdgesDeu() {
-        assertEquals("Day la tam giac deu", TriangleEdges.isEquilateral(5, 5, 5));
+        assertTrue("Day la tam giac deu", TriangleEdges.isEquilateral(5, 5, 5));
     }
     
     @Test
     public void testTriangleEdgesCan() {
-        assertEquals("Day la tam giac can", TriangleEdges.isIsosceles(5, 7, 5));
+        assertTrue("Day la tam giac can", TriangleEdges.isIsosceles(5, 7, 5));
     }
     
     // @Test
@@ -30,6 +30,6 @@ public class TriangleEdgesTest {
     
     @Test
     public void testTriangleEdgesNotTriangle() {
-        assertEquals("Day khong la tam giac", TriangleEdges.classifyTriangle(1, 2, 3));
+        assertTrue("Day khong la tam giac", TriangleEdges.isNotValidTriangle(1, 2, 3));
     }
 }

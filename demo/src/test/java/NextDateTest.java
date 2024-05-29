@@ -20,7 +20,7 @@ public class NextDateTest {
 
     @Test
     public void testNextDateLastDayOfMonthFebruaryLeapYear() {
-        assertArrayEquals(new int[]{29, 2, 2024}, NextDate.nextDate(28, 2, 2023));
+        assertArrayEquals(new int[]{1, 3, 2023}, NextDate.nextDate(28, 2, 2023));
     }
 
     @Test
